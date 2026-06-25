@@ -7,7 +7,10 @@ from typing import Any
 
 import requests
 
-DEFAULT_API_URL = os.getenv("API_URL", "http://localhost:8000")
+DEFAULT_API_URL = os.getenv(
+    "API_URL",
+    "https://cyber-intrusion-api.onrender.com"
+)
 
 
 def predict_traffic(payload: dict[str, Any], api_url: str = DEFAULT_API_URL) -> dict[str, Any]:
